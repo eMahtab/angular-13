@@ -1,0 +1,32 @@
+.scan-name {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    display: grid;
+    align-items: center;
+}
+
+.left-nav-label {
+    background: #edeff0;
+    border-radius: 1px;
+    font-size: 14px;
+    color: #2b2d2e;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.series-content {
+    margin: 0 8px 8px 30px;
+  }
+  
+
+
+.left-nav-series-div {
+    border: 1px solid #c5c7c9;;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
