@@ -1,0 +1,86 @@
+---
+
+File: devops-config
+
+Version: 1.0
+
+BasicVars:
+   build_type: npm
+   package_type: zip
+   artifact_version: '1.0'
+   aws_region: us-east-1
+   aws_vpc_id: 043691689572
+   finished_goods_repo: 
+   additional_finished_goods_repo: 
+   aws_upload_files: 
+   repo_url: https://github.build.ge.com/gehc-protocol-manager/protocol-webui-nm-viewer.git
+   custom_pre_commands:    
+
+DockerVars:
+   docker_additional_args: 
+   docker_additional_repo: 
+   dockerfile_location: 
+   docker_tag_latest: false
+
+MvnVars:
+   mvn_additional_args: 
+   mvn_deploy: false
+   mvn_deploy_additional_args: 
+
+NpmVars:
+   node_version: 14.16.0
+   run_npm_validate: true
+   npm_registry: https://hc-us-east-aws-artifactory.cloud.health.ge.com/artifactory/api/npm/npm-gehc-protocol-manager-all/
+   npm_publish: true
+   publish_on_non_default_branch: true
+
+LambdaVars:
+   aws_dev_lambda_name:
+   aws_test_lambda_name: 
+   aws_prod_lambda_name: 
+
+KpiVars:
+   kpi_build_status_id: 
+   kpi_elapsed_time_id: 
+
+SonarVars:
+   aws_run_sonar: false
+   sonar_additional_args: 
+
+TestingVars:
+   test_component_command:
+   test_contract_command: 
+   test_unit_command: nvm use 14.16.0; npm run test
+   test_integration_command: 
+   publish_unit_test: true
+   generate_cucumber_report: false
+   cucumber_file_include_pattern: component-test-results.json
+   unit_report_name: pm-nm-utils-test-report
+   unit_report_directory : 'coverage/lcov-report'
+   unit_report_file : index.html
+
+DevEnvVars:
+   aws_dev_cluster_name: 
+   aws_dev_service_name: 
+   aws_dev_task_definition: 
+
+TestEnvVars:
+   aws_test_cluster_name: 
+   aws_test_service_name: 
+   aws_test_task_definition: 
+
+ProdEnvVars:
+   aws_prod_cluster_name: 
+   aws_prod_service_name: 
+   aws_prod_task_definition: 
+
+CloudFormationVars:
+   aws_dev_stack_name: 
+   aws_dev_stack_parameters: 
+   aws_test_stack_name: 
+   aws_test_stack_parameters: 
+   aws_prod_stack_name: 
+   aws_prod_stack_parameters: 
+
+DeployVars:  
+   skip_aws_deploy: true    
