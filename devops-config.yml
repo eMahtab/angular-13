@@ -29,7 +29,7 @@ MvnVars:
 
 NpmVars:
    node_version: 14.16.0
-   run_npm_validate: true
+   run_npm_validate: false
    npm_registry: https://hc-us-east-aws-artifactory.cloud.health.ge.com/artifactory/api/npm/npm-gehc-protocol-manager-all/
    npm_publish: true
    publish_on_non_default_branch: true
