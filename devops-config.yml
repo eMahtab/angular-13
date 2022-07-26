@@ -50,7 +50,7 @@ SonarVars:
 TestingVars:
    test_component_command:
    test_contract_command: 
-   test_unit_command: nvm use 14.16.0; npm run test
+   test_unit_command: nvm use 14.16.0
    test_integration_command: 
    publish_unit_test: true
    generate_cucumber_report: false
