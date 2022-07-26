@@ -14,6 +14,7 @@ BasicVars:
    additional_finished_goods_repo: 
    aws_upload_files: 
    repo_url: https://github.build.ge.com/gehc-protocol-manager/protocol-webui-nm-viewer.git
+   custom_artifact_version: true
    custom_pre_commands:    
 
 DockerVars:
