@@ -1,9 +1,16 @@
 <div>
-    <div series-content>
+    <div>
         <div class="left-nav-series-div">
-            <div *ngFor="let scan of view.viewModel">
-                <span class="scan-name left-nav-label">{{ scan.scanName }}</span> 
-             </div>
+            <div class="series-content">
+                <div 
+                    *ngFor="let scan of leftNavigationData; let scanIndex=index;"
+                     class="left-nav-label scan-name" 
+                     [ngClass]="selectedScanIndex === scanIndex ? 'scan-name-selected' : ''"
+                     id="{{scanIndex}}"
+                     (click)="showScanDetails(scanIndex)">
+                    <span class="">{{scanIndex+1}} . {{ scan.scanName }}</span> 
+                 </div>
+            </div>
         </div>
     </div>
 </div>
