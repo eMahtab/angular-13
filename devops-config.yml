@@ -2,18 +2,19 @@
 
 File: devops-config
 
-Version: 1.0
+Version: 2.0
 
 BasicVars:
    build_type: npm
    package_type: zip
-   artifact_version: '1.0'
+   artifact_version: '2.0'
    aws_region: us-east-1
    aws_vpc_id: 043691689572
    finished_goods_repo: 
    additional_finished_goods_repo: 
    aws_upload_files: 
    repo_url: https://github.build.ge.com/gehc-protocol-manager/protocol-webui-nm-viewer.git
+   custom_artifact_version: true
    custom_pre_commands:    
 
 DockerVars:
@@ -29,7 +30,7 @@ MvnVars:
 
 NpmVars:
    node_version: 14.16.0
-   run_npm_validate: true
+   run_npm_validate: false
    npm_registry: https://hc-us-east-aws-artifactory.cloud.health.ge.com/artifactory/api/npm/npm-gehc-protocol-manager-all/
    npm_publish: true
    publish_on_non_default_branch: true
@@ -50,7 +51,7 @@ SonarVars:
 TestingVars:
    test_component_command:
    test_contract_command: 
-   test_unit_command: nvm use 14.16.0; npm run test
+   test_unit_command: nvm use 14.16.0
    test_integration_command: 
    publish_unit_test: true
    generate_cucumber_report: false

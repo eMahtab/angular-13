@@ -1,0 +1,39 @@
+.accicon {
+    float: left;
+    font-size: 20px;  
+    width: 1.2em;
+}
+
+.panel-header:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg);
+  }
+
+.round-corner{
+    border-radius: 4px;
+}
+
+.table-caption{
+    caption-side: top;
+    font-weight: 700;
+}
+
+td {
+    background-color: #fff;
+    max-width: 230px;
+    min-width: 230px;
+    min-height: 25px;
+    padding-top: 3px;
+    padding-left: 12px;
+    padding-right: 10px;
+    color: #366479;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-top: none;
+}
+
+
+tr {
+    line-height: 15px;
+ }
